@@ -1,0 +1,70 @@
+:root {
+  --primary-color: #157944;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  margin: 100px auto;
+  border-radius: 30px;
+  padding: 20px;
+  background: #8ff9c0;
+}
+
+.food-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.food {
+  height: 200px;
+  width: 30%;
+  margin: 20px 5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+img:hover {
+  transition: 1s all;
+  transform: scale(2) rotate(85deg);
+}
+
+button {
+  padding: 5px 15px;
+  margin: 10px 20px;
+  width: 100px;
+  height: 30px;
+  background: whitesmoke;
+  border: var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 5px;
+}
+
+button.active {
+  background: var(--primary-color);
+  color: aliceblue;
+}
+
+.hide {
+  display: none;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
